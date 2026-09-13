@@ -4,16 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
+// 先检测原始屏幕尺寸（在修改viewport之前）
+var _origWidth = window.innerWidth;
+var _origHeight = window.innerHeight;
+
 // 手机端自动切换为固定宽度1920px，保持横屏比例
-if (window.innerWidth < 1024) {
+if (_origWidth < 1024) {
   document.querySelector('meta[name=viewport]').setAttribute('content', 'width=1920');
 }
-// 手机竖屏提示横屏
+
+// 手机竖屏提示横屏（用原始屏幕尺寸判断，不受viewport影响）
 function checkOrientation() {
   var tip = document.getElementById('rotateTip');
   if (!tip) return;
-  var isMobile = window.innerWidth < 1024;
-  var isPortrait = window.innerHeight > window.innerWidth;
+  var isMobile = _origWidth < 1024;
+  var isPortrait = _origHeight > _origWidth;
   if (isMobile && isPortrait) {
     tip.classList.add('active');
   } else {
@@ -21,8 +26,12 @@ function checkOrientation() {
   }
 }
 window.addEventListener('load', checkOrientation);
-window.addEventListener('resize', checkOrientation);
-window.addEventListener('orientationchange', checkOrientation);
+window.addEventListener('orientationchange', function() {
+  // 旋转后更新原始尺寸
+  _origWidth = window.innerWidth;
+  _origHeight = window.innerHeight;
+  checkOrientation();
+});
 </script>
 <title>PORTFOLIO — 鲁正阳 · 视觉传达设计作品集</title>
 <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Archivo+Black&family=Space+Mono:wght@400;700&family=Ma+Shan+Zheng&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;700;900&display=swap">

@@ -2,10 +2,28 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1440, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>PORTFOLIO — 鲁正阳 · 视觉传达设计作品集</title>
 <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Archivo+Black&family=Space+Mono:wght@400;700&family=Ma+Shan+Zheng&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;700;900&display=swap">
 <style>
+/* 手机竖屏自动旋转为横屏显示 */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  html {
+    transform: rotate(90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  body {
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+  }
+}
 :root {
   --purple: #5B3A8C;
   --purple-deep: #2D1A4E;

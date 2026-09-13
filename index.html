@@ -110,7 +110,7 @@ body::after {
 
 /* COVER */
 #cover {
-  min-height: 100vh;
+  min-height: 1080px;
   background: var(--pink-hot);
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
   color: var(--cream);
@@ -270,7 +270,7 @@ body::after {
 /* ABOUT */
 #about {
   background: var(--ink); color: var(--white);
-  min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw;
+  min-height: 1080px; margin: 0; width: 100%;
   padding: 100px 60px; box-sizing: border-box; position: relative; overflow: hidden;
   display: flex; flex-direction: column; justify-content: center;
 }
@@ -530,7 +530,7 @@ body::after {
   gap: 0;
 }
 .logo-card {
-  height: 100vh; min-height: 100vh; background: var(--white);
+  height: 1080px; min-height: 1080px; background: var(--white);
   border: none; display: flex;
   align-items: center; justify-content: center;
   padding: 60px; transition: all 0.3s;
@@ -603,7 +603,7 @@ body::after {
 /* SKILLS */
 #skills {
   background: var(--purple-deep); color: var(--white);
-  min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw;
+  min-height: 1080px; margin: 0; width: 100%;
   padding: 80px 60px; box-sizing: border-box; position: relative; overflow: hidden;
   display: flex; flex-direction: column; justify-content: center;
 }
@@ -641,7 +641,7 @@ body::after {
 /* CONTACT */
 #contact {
   background: var(--pink-hot); color: var(--white);
-  min-height: calc(100vh - 84px); margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw;
+  min-height: calc(1080px - 84px); margin: 0; width: 100%;
   padding: 100px 60px; box-sizing: border-box; position: relative; overflow: hidden; text-align: center;
   display: flex; flex-direction: column; justify-content: center;
 }
@@ -941,7 +941,7 @@ window.addEventListener('resize', scalePage);
 </section>
 
 <!-- 品牌设计页下面的跑马灯 -->
-<div class="marquee" style="background: var(--pink-hot); color: var(--yellow); border-top: 3px solid var(--yellow); border-bottom: 3px solid var(--yellow); margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw;">
+<div class="marquee" style="background: var(--pink-hot); color: var(--yellow); border-top: 3px solid var(--yellow); border-bottom: 3px solid var(--yellow); margin: 0; width: 100%;">
   <div class="marquee-track">
     <span>★ BRAND IDENTITY</span><span>★ 弋拾叁韵</span><span>★ 圣塔利德</span><span>★ VISUAL SYSTEM</span><span>★ LOGO DESIGN</span><span>★ BRAND STRATEGY</span>
     <span>★ BRAND IDENTITY</span><span>★ 弋拾叁韵</span><span>★ 圣塔利德</span><span>★ VISUAL SYSTEM</span><span>★ LOGO DESIGN</span><span>★ BRAND STRATEGY</span>
@@ -985,7 +985,7 @@ window.addEventListener('resize', scalePage);
 
 
     <!-- Logo大幅展示 -->
-    <div style="background: var(--white); height: 100vh; min-height: 100vh; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; scroll-margin-top: 0;">
+    <div style="background: var(--white); height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; scroll-margin-top: 0;">
       <div style="position: absolute; top: 30px; left: 40px; font-family: 'Archivo Black', sans-serif; font-size: 20px; color: var(--pink-hot); letter-spacing: 2px; z-index: 3;">BRAND CORE / 品牌核心</div>
       <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 1px; height: 100%; background: rgba(0,0,0,0.05);"></div>
       <div style="position: absolute; top: 50%; left: 0; width: 100%; height: 1px; background: rgba(0,0,0,0.05);"></div>
@@ -994,8 +994,8 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 视觉元素：IP形象 -->
-  <div class="project-section reveal" style="padding: 0; background: linear-gradient(to right, #D24182 0%, #D24182 40%, rgba(210,65,130,0.9) 60%, rgba(210,65,130,0.65) 80%, rgba(210,65,130,0.45) 100%), url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"); margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; z-index: 10;">
-    <div style="background: var(--cream); height: 100vh !important; min-height: 100vh !important; max-height: 100vh !important; width: 100%; position: relative; overflow: hidden !important; display: flex; flex-direction: column; align-items: center; justify-content: center; scroll-margin-top: 0;">
+  <div class="project-section reveal" style="padding: 0; background: linear-gradient(to right, #D24182 0%, #D24182 40%, rgba(210,65,130,0.9) 60%, rgba(210,65,130,0.65) 80%, rgba(210,65,130,0.45) 100%), url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"); margin: 0; width: 100%; position: relative; z-index: 10;">
+    <div style="background: var(--cream); height: 1080px !important; min-height: 1080px !important; max-height: 1080px !important; width: 100%; position: relative; overflow: hidden !important; display: flex; flex-direction: column; align-items: center; justify-content: center; scroll-margin-top: 0;">
       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(rgba(232,63,111,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(232,63,111,0.04) 1px, transparent 1px); background-size: 50px 50px;"></div>
       <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'Noto Serif SC', serif; font-size: 380px; font-weight: 900; color: var(--pink-hot); opacity: 0.04; line-height: 1; z-index: 1; white-space: nowrap;">角色</div>
       <div style="position: absolute; top: 40px; left: 60px; z-index: 5;">
@@ -1028,8 +1028,8 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 品牌标准色 -->
-  <div class="project-section reveal" style="padding: 0; margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; position: relative; z-index: 10;">
-    <div style="height: 100vh; width: 100%; position: relative; overflow: hidden; display: flex; flex-direction: column; scroll-margin-top: 0;">
+  <div class="project-section reveal" style="padding: 0; margin: 0 0; width: 100%; position: relative; z-index: 10;">
+    <div style="height: 1080px; width: 100%; position: relative; overflow: hidden; display: flex; flex-direction: column; scroll-margin-top: 0;">
       
       <!-- 左上角标签 -->
       <div style="position: absolute; top: 40px; left: 60px; z-index: 5;">
@@ -1094,8 +1094,8 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 品牌背景介绍 -->
-  <div class="project-section reveal" style="padding: 0; margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; position: relative; z-index: 10;">
-    <div style="height: 100vh; width: 100%; position: relative; overflow: hidden; background: #D24182; scroll-margin-top: 0;">
+  <div class="project-section reveal" style="padding: 0; margin: 0 0; width: 100%; position: relative; z-index: 10;">
+    <div style="height: 1080px; width: 100%; position: relative; overflow: hidden; background: #D24182; scroll-margin-top: 0;">
       
       <!-- 背景装饰：大号墨黑文字水印 -->
       <div style="position: absolute; top: -50px; left: -30px; font-family: 'Archivo Black', sans-serif; font-size: 280px; color: rgba(26,26,26,0.08); font-weight: 900; letter-spacing: -5px; line-height: 0.8; z-index: 0; user-select: none;">YISAN<br>RHYME</div>
@@ -1153,8 +1153,8 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 辅助图形 -->
-  <div class="project-section reveal" style="padding: 0; margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; position: relative; z-index: 10;">
-    <div style="height: 100vh; width: 100%; position: relative; overflow: hidden; background: #1A1A1A; scroll-margin-top: 0;">
+  <div class="project-section reveal" style="padding: 0; margin: 0 0; width: 100%; position: relative; z-index: 10;">
+    <div style="height: 1080px; width: 100%; position: relative; overflow: hidden; background: #1A1A1A; scroll-margin-top: 0;">
       
       
       
@@ -1242,8 +1242,8 @@ window.addEventListener('resize', scalePage);
   </div>
 
 <!-- 海报系列 -->
-  <div class="project-section reveal" style="padding: 0; margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; position: relative; z-index: 10;">
-    <div id="posterContainer" style="height: 100vh; width: 100%; position: relative; overflow: hidden; scroll-margin-top: 0; display: flex; align-items: center; justify-content: center;">
+  <div class="project-section reveal" style="padding: 0; margin: 0 0; width: 100%; position: relative; z-index: 10;">
+    <div id="posterContainer" style="height: 1080px; width: 100%; position: relative; overflow: hidden; scroll-margin-top: 0; display: flex; align-items: center; justify-content: center;">
       <img id="posterImage" src="images/works/bg_lightbox_with_posters.png" alt="弋拾叁韵海报系列" style="display: block; transform-origin: center center;">
     </div>
   </div>
@@ -1275,8 +1275,8 @@ window.addEventListener('resize', scalePage);
   </script>
 
   <!-- 事务用品系统 -->
-  <div class="project-section reveal" style="padding: 0; margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; position: relative; z-index: 10;">
-    <div style="height: 100vh; width: 100%; position: relative; overflow: hidden; background: #F5F0E8; scroll-margin-top: 0;">
+  <div class="project-section reveal" style="padding: 0; margin: 0 0; width: 100%; position: relative; z-index: 10;">
+    <div style="height: 1080px; width: 100%; position: relative; overflow: hidden; background: #F5F0E8; scroll-margin-top: 0;">
       <!-- 左上角标签 -->
       <div style="position: absolute; top: 40px; left: 60px; z-index: 5;">
         <div style="font-family: 'Space Mono', monospace; font-size: clamp(11px, 1vw, 14px); letter-spacing: 3px; color: #D24182; text-transform: uppercase; font-weight: 700;">YISAN RHYME</div>
@@ -1321,8 +1321,8 @@ window.addEventListener('resize', scalePage);
 
 
 <!-- 产品应用 -->
-  <div class="project-section reveal" style="padding: 0; margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; position: relative; z-index: 10;">
-    <div style="height: 100vh; width: 100%; position: relative; overflow: hidden; background: #1A1A1A; scroll-margin-top: 0;">
+  <div class="project-section reveal" style="padding: 0; margin: 0 0; width: 100%; position: relative; z-index: 10;">
+    <div style="height: 1080px; width: 100%; position: relative; overflow: hidden; background: #1A1A1A; scroll-margin-top: 0;">
       <!-- 左上角标签 -->
       <div style="position: absolute; top: 40px; left: 60px; z-index: 5;">
         <div style="font-family: 'Space Mono', monospace; font-size: clamp(11px, 1vw, 14px); letter-spacing: 3px; color: #D24182; text-transform: uppercase; font-weight: 700;">YISAN RHYME</div>
@@ -1363,8 +1363,8 @@ window.addEventListener('resize', scalePage);
 </section>
 
   <!-- 样机展示01：吊牌 + 胶带 -->
-  <div class="project-section reveal" style="padding: 0; margin: -80px calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; position: relative; z-index: 10;">
-    <div style="height: 100vh; width: 100%; position: relative; overflow: hidden; background: #FFFFFF; scroll-margin-top: 0;">
+  <div class="project-section reveal" style="padding: 0; margin: -80px 0 0; width: 100%; position: relative; z-index: 10;">
+    <div style="height: 1080px; width: 100%; position: relative; overflow: hidden; background: #FFFFFF; scroll-margin-top: 0;">
       <!-- 左上角标签 -->
       <div style="position: absolute; top: 40px; left: 60px; z-index: 5;">
         <div style="font-family: 'Space Mono', monospace; font-size: clamp(11px, 1vw, 14px); letter-spacing: 3px; color: #D24182; text-transform: uppercase; font-weight: 700;">YISAN RHYME</div>
@@ -1385,8 +1385,8 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 样机展示02：水杯 -->
-  <div class="project-section reveal" style="padding: 0; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; z-index: 10;">
-    <div style="height: 100vh; width: 100%; position: relative; overflow: hidden; background: #FFFFFF; scroll-margin-top: 0;">
+  <div class="project-section reveal" style="padding: 0; margin: 0; width: 100%; position: relative; z-index: 10;">
+    <div style="height: 1080px; width: 100%; position: relative; overflow: hidden; background: #FFFFFF; scroll-margin-top: 0;">
       <!-- 左上角标签 -->
       <div style="position: absolute; top: 40px; left: 60px; z-index: 5;">
         <div style="font-family: 'Space Mono', monospace; font-size: clamp(11px, 1vw, 14px); letter-spacing: 3px; color: #1A1A1A; text-transform: uppercase; font-weight: 700;">YISAN RHYME</div>
@@ -1419,8 +1419,8 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 样机展示03：红包 -->
-  <div class="project-section reveal" style="padding: 0; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; z-index: 10;">
-    <div style="height: 100vh; width: 100%; position: relative; overflow: hidden; background: #1A1A1A; scroll-margin-top: 0;">
+  <div class="project-section reveal" style="padding: 0; margin: 0; width: 100%; position: relative; z-index: 10;">
+    <div style="height: 1080px; width: 100%; position: relative; overflow: hidden; background: #1A1A1A; scroll-margin-top: 0;">
       
       <!-- 背景装饰：大号玫粉色文字水印 -->
       <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'Archivo Black', sans-serif; font-size: clamp(120px, 18vw, 280px); color: rgba(210,65,130,0.08); font-weight: 900; letter-spacing: -5px; line-height: 1; z-index: 0; user-select: none; white-space: nowrap;">RED</div>
@@ -1460,8 +1460,8 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 样机展示04：导视牌 -->
-  <div class="project-section reveal" style="padding: 0; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; z-index: 10;">
-    <div style="height: 100vh; width: 100%; position: relative; overflow: hidden; background: #FFFFFF; scroll-margin-top: 0;">
+  <div class="project-section reveal" style="padding: 0; margin: 0; width: 100%; position: relative; z-index: 10;">
+    <div style="height: 1080px; width: 100%; position: relative; overflow: hidden; background: #FFFFFF; scroll-margin-top: 0;">
       
       <!-- 顶部细线装饰 -->
       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: rgba(0,0,0,0.08);"></div>
@@ -1516,7 +1516,7 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 品牌核心：logo大幅展示 -->
-  <div style="background: #6A4B9B; height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; scroll-margin-top: 0;">
+  <div style="background: #6A4B9B; height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; scroll-margin-top: 0;">
     <!-- 背景装饰：白色网格 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 60px 60px;"></div>
     
@@ -1551,7 +1551,7 @@ window.addEventListener('resize', scalePage);
     </div>
   </div>
 
-  <div style="background: #FFFFFF; height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; scroll-margin-top: 0;">
+  <div style="background: #FFFFFF; height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; scroll-margin-top: 0;">
     <div style="width: 70%; text-align: center; margin-bottom: 80px;">
       <img src="images/works/saintaride_logo_grid2.png" alt="圣塔利德标志方格制图" style="width: 100%; display: block; margin: 0 auto;">
     </div>
@@ -1560,7 +1560,7 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 品牌背景介绍 -->
-  <div style="background: #D74291; height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; scroll-margin-top: 0;">
+  <div style="background: #D74291; height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; scroll-margin-top: 0;">
     <!-- 背景装饰：噪点纹理 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");"></div>
     
@@ -1590,7 +1590,7 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 品牌标准色 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; flex-direction: column; scroll-margin-top: 0;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; flex-direction: column; scroll-margin-top: 0;">
     
     <!-- 上半部分：主色紫色（满宽） -->
     <div style="height: 55%; width: 100%; background: #6A4B9B; position: relative; padding: 80px 80px 50px 80px; display: flex; align-items: flex-end; justify-content: space-between; overflow: hidden;">
@@ -1659,7 +1659,7 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 字体规范 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #040000;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #040000;">
     
     <!-- 左上角标签 -->
     <div style="position: absolute; top: 40px; left: 60px; z-index: 5;">
@@ -1742,7 +1742,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 辅助图形系统 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #2A2A2A;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #2A2A2A;">
     
     <!-- 背景装饰：几何线条网格 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; opacity: 0.06;">
@@ -1805,7 +1805,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 文创周边设计 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #2D1B4E;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #2D1B4E;">
     
     <!-- 背景装饰：简约线条 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
@@ -1849,7 +1849,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 滑板产品展示 01 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #090606;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #090606;">
     
     <!-- 左侧竖排大标题 -->
     <div style="position: absolute; top: 50%; left: 50px; transform: translateY(-50%); z-index: 5;">
@@ -1882,7 +1882,7 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 帆布包产品展示 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #5D4297;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #5D4297;">
     
     <!-- 左上角文字 -->
     <div style="position: absolute; top: 60px; left: 60px; z-index: 5;">
@@ -1910,7 +1910,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 产品展示 03 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F7F8FA;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F7F8FA;">
     
     <!-- 左侧超大竖排文字 -->
     <div style="position: absolute; top: 50%; left: 30px; transform: translateY(-50%); z-index: 1;">
@@ -1938,7 +1938,7 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 产品展示 04 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2) -80px; width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #EEEDF1;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0 -80px; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #EEEDF1;">
     
     <!-- 右侧超大横排文字（在图片上面，文字下面） -->
     <div style="position: absolute; bottom: 20px; right: -20px; z-index: 3;">
@@ -1977,7 +1977,7 @@ window.addEventListener('resize', scalePage);
 </section>
 
 <!-- 包装设计与半盏青绿之间的跑马灯 -->
-<div class="marquee" style="background: #254535; color: #F5F1E8; border-top: 3px solid #A8C090; border-bottom: 3px solid #A8C090; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw;">
+<div class="marquee" style="background: #254535; color: #F5F1E8; border-top: 3px solid #A8C090; border-bottom: 3px solid #A8C090; margin: 0; width: 100%;">
   <div class="marquee-track">
     <span>★ PACKAGING DESIGN</span><span>★ TEA CULTURE</span><span>★ 半盏青绿</span><span>★ 果酒系列</span><span>★ BRAND IDENTITY</span><span>★ VISUAL DESIGN</span>
     <span>★ PACKAGING DESIGN</span><span>★ TEA CULTURE</span><span>★ 半盏青绿</span><span>★ 果酒系列</span><span>★ BRAND IDENTITY</span><span>★ VISUAL DESIGN</span>
@@ -2010,7 +2010,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 品牌背景介绍页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #1F3A2E;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #1F3A2E;">
     
     <!-- 左上角标签 -->
     <div style="position: absolute; top: 70px; left: 70px; z-index: 5;">
@@ -2068,7 +2068,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- Logo设计页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F7F9F7;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F7F9F7;">
     
     <!-- 背景大号水印文字 -->
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; white-space: nowrap;">
@@ -2119,7 +2119,7 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 品牌标准色页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F5F1E8;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F5F1E8;">
     
     <!-- 背景网格纹理 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.04; z-index: 1;">
@@ -2206,7 +2206,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 品牌定位与目标用户页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #1F3A2E;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #1F3A2E;">
     
     <!-- 背景山水云纹 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.06; z-index: 1;">
@@ -2305,7 +2305,7 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 插画海报页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F5F1E8;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F5F1E8;">
     
     <!-- 背景网格纹理 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.04; z-index: 1;">
@@ -2373,7 +2373,7 @@ window.addEventListener('resize', scalePage);
     
   </div>
   <!-- 包装展示页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F5F1E8;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F5F1E8;">
     
     <!-- 背景网格纹理 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.04; z-index: 1;">
@@ -2413,7 +2413,7 @@ window.addEventListener('resize', scalePage);
     
   </div>
   <!-- 包装展示页02 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F5F1E8;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F5F1E8;">
     
     <!-- 背景网格纹理 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.04; z-index: 1;">
@@ -2454,7 +2454,7 @@ window.addEventListener('resize', scalePage);
   </div>
 
   <!-- 包装展示页03 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F5F1E8;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #F5F1E8;">
     
     <!-- 背景网格纹理 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.04; z-index: 1;">
@@ -2521,7 +2521,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 品牌背景介绍页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #1E3A5F;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #1E3A5F;">
     
     <!-- 背景大号水印 -->
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; white-space: nowrap;">
@@ -2597,7 +2597,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 江海言系列详情页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #0F2744;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #0F2744;">
     
     <!-- 背景大号水印 -->
     <div style="position: absolute; top: 50%; left: 25%; transform: translate(-50%, -50%); z-index: 1; white-space: nowrap;">
@@ -2677,7 +2677,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 江海言整套包装展示页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #1E3A5F;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #1E3A5F;">
     
     <!-- 背景大号水印（保留） -->
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; white-space: nowrap;">
@@ -2717,7 +2717,7 @@ window.addEventListener('resize', scalePage);
 
 
   <!-- 蓝莓果酒详情页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #7977B7;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #7977B7;">
     
     <!-- 右侧图片展示区（z-index: 1，在印花下方） -->
     <div style="position: absolute; right: 0; top: 0; width: 65%; height: 100%; z-index: 1; display: flex; align-items: center; justify-content: center; padding: 60px 80px 80px 40px;">
@@ -2780,7 +2780,7 @@ window.addEventListener('resize', scalePage);
     
   </div>
   <!-- 蓝莓果酒第二页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #FFFFFF;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #FFFFFF;">
     
     <!-- 右侧图片展示区（z-index: 1，在印花下方） -->
     <div style="position: absolute; right: 0; top: 0; width: 70%; height: 100%; z-index: 1; display: flex; align-items: center; justify-content: center; padding: 60px 80px 80px 40px;">
@@ -2858,7 +2858,7 @@ window.addEventListener('resize', scalePage);
     
   </div>
   <!-- 遇见果酒详情页 -->
-  <div style="height: 100vh; min-height: 100vh; margin: 0 calc(-1 * (100vw - 100%) / 2); width: 100vw; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #FFFFFF;">
+  <div style="height: 1080px; min-height: 1080px; margin: 0; width: 100%; position: relative; overflow: hidden; display: flex; scroll-margin-top: 0; background: #FFFFFF;">
     
     <!-- 背景装饰 - 极简线条 -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
@@ -3172,7 +3172,7 @@ window.addEventListener('resize', scalePage);
   <div class="project-hero reveal" style="background: #000000; aspect-ratio: 16/7; margin-bottom: 0; margin-left: -40px; margin-right: -40px; width: calc(100% + 80px);">
     <div class="project-hero-label" style="color: var(--yellow);">PROJECT HERO / 主视觉</div>
   </div>
-  <div class="reveal" style="margin: 0 calc(-1 * (100vw - 100%) / 2) 50px; width: 100vw; aspect-ratio: 3508/4960; position: relative; overflow: hidden; scroll-margin-top: 0; background-image: url('images/works/app_yan_page1.png'); background-size: cover; background-position: center;">
+  <div class="reveal" style="margin: 0 50px; width: 100%; aspect-ratio: 3508/4960; position: relative; overflow: hidden; scroll-margin-top: 0; background-image: url('images/works/app_yan_page1.png'); background-size: cover; background-position: center;">
   </div>
   
   <!-- 宝藏屋 项目信息页 -->
@@ -3199,7 +3199,7 @@ window.addEventListener('resize', scalePage);
   </div>
   
   <!-- 宝藏屋 第一页：项目信息+设计说明+图标展示 -->
-  <div class="reveal" style="margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; min-height: 100vh; background: #3461AD; position: relative; overflow: hidden; scroll-margin-top: 0; padding: 80px 60px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+  <div class="reveal" style="margin: 0 0; width: 100%; min-height: 1080px; background: #3461AD; position: relative; overflow: hidden; scroll-margin-top: 0; padding: 80px 60px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
     <div style="position: absolute; top: 40px; right: 60px; font-family: 'Space Mono', monospace; font-size: 14px; letter-spacing: 3px; color: #F3CF5A;">PROJECT 02 / MOBILE THEME</div>
     <div style="position: absolute; bottom: 40px; left: 60px; font-family: 'Archivo Black', sans-serif; font-size: clamp(120px, 20vw, 300px); line-height: 0.7; color: rgba(251,243,217,0.08); z-index: 1; user-select: none;">02</div>
     
@@ -3250,7 +3250,7 @@ window.addEventListener('resize', scalePage);
   </div>
   
   <!-- 宝藏屋 第二页：设计理念+效果展示 -->
-  <div class="reveal" style="margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; min-height: 100vh; background: #3461AD; position: relative; overflow: hidden; scroll-margin-top: 0; padding: 80px 60px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+  <div class="reveal" style="margin: 0 0; width: 100%; min-height: 1080px; background: #3461AD; position: relative; overflow: hidden; scroll-margin-top: 0; padding: 80px 60px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
     <div style="position: absolute; top: -50px; right: -50px; width: 400px; height: 400px; border-radius: 50%; background: rgba(243,207,90,0.1);"></div>
     <div style="position: absolute; bottom: -100px; left: -100px; width: 500px; height: 500px; border-radius: 50%; background: rgba(234,90,110,0.1);"></div>
     
@@ -3304,7 +3304,7 @@ window.addEventListener('resize', scalePage);
   </div>
   
   <!-- 其他作品 第一页：蓝色记忆书籍装帧设计 -->
-  <div class="reveal" style="margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; min-height: 100vh; background: var(--purple); position: relative; overflow: hidden; scroll-margin-top: 0; padding: 60px; box-sizing: border-box; display: flex; align-items: center;">
+  <div class="reveal" style="margin: 0 0; width: 100%; min-height: 1080px; background: var(--purple); position: relative; overflow: hidden; scroll-margin-top: 0; padding: 60px; box-sizing: border-box; display: flex; align-items: center;">
     <!-- 左侧文字栏 -->
     <div style="width: 32%; flex-shrink: 0; padding-right: 40px;">
       <!-- 顶部标签 -->
@@ -3361,7 +3361,7 @@ window.addEventListener('resize', scalePage);
   </div>
   
   <!-- 其他作品 第二页：信息可视化设计 -->
-  <div class="reveal" style="margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; min-height: 100vh; background: var(--purple); position: relative; overflow: hidden; scroll-margin-top: 0; padding: 60px; box-sizing: border-box; display: flex; align-items: center;">
+  <div class="reveal" style="margin: 0 0; width: 100%; min-height: 1080px; background: var(--purple); position: relative; overflow: hidden; scroll-margin-top: 0; padding: 60px; box-sizing: border-box; display: flex; align-items: center;">
     <!-- 左侧文字栏 -->
     <div style="width: 32%; flex-shrink: 0; padding-right: 40px; display: flex; flex-direction: column; justify-content: center;">
       <!-- 大编号背景 -->
@@ -3410,7 +3410,7 @@ window.addEventListener('resize', scalePage);
   </div>
   
   <!-- 其他作品 第三页：动态海报 -->
-  <div class="reveal" style="margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; min-height: 100vh; background: var(--purple); position: relative; overflow: hidden; scroll-margin-top: 0; padding: 60px; box-sizing: border-box; display: flex; align-items: center;">
+  <div class="reveal" style="margin: 0 0; width: 100%; min-height: 1080px; background: var(--purple); position: relative; overflow: hidden; scroll-margin-top: 0; padding: 60px; box-sizing: border-box; display: flex; align-items: center;">
     <!-- 左侧文字栏 -->
     <div style="width: 32%; flex-shrink: 0; padding-right: 40px; display: flex; flex-direction: column; justify-content: center;">
       <!-- 大编号背景 -->
@@ -3462,7 +3462,7 @@ window.addEventListener('resize', scalePage);
   </div>
   
   <!-- 其他作品 第四页：红包设计（上下结构，图片放大，无04编号） -->
-  <div class="reveal" style="margin: 0 calc(-1 * (100vw - 100%) / 2) 0; width: 100vw; min-height: 100vh; background: var(--purple); position: relative; overflow: hidden; scroll-margin-top: 0; padding: 50px 60px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+  <div class="reveal" style="margin: 0 0; width: 100%; min-height: 1080px; background: var(--purple); position: relative; overflow: hidden; scroll-margin-top: 0; padding: 50px 60px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
     
     <!-- 顶部标题区 -->
     <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 35px;">

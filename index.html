@@ -20,12 +20,12 @@ if (_isMobile) {
   document.querySelector('meta[name=viewport]').setAttribute('content', 'width=1920');
 }
 
-// 旋转屏幕时更新class
+// 旋转屏幕时更新class（用matchMedia检测方向，不受viewport影响）
 window.addEventListener('orientationchange', function() {
   setTimeout(function() {
-    var w = window.innerWidth;
-    var h = window.innerHeight;
-    if (w < 1024 && h > w) {
+    var isMobile = screen.width < 1024;
+    var isPortrait = window.matchMedia("(orientation: portrait)").matches;
+    if (isMobile && isPortrait) {
       document.documentElement.classList.add('mobile-portrait');
     } else {
       document.documentElement.classList.remove('mobile-portrait');

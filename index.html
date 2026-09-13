@@ -6,22 +6,56 @@
 <title>PORTFOLIO — 鲁正阳 · 视觉传达设计作品集</title>
 <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Archivo+Black&family=Space+Mono:wght@400;700&family=Ma+Shan+Zheng&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;700;900&display=swap">
 <style>
-/* 手机竖屏自动旋转为横屏显示 */
+/* 手机竖屏提示横屏 */
+.rotate-tip {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #0A0A0A;
+  color: #FFE500;
+  z-index: 999999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans SC', sans-serif;
+  text-align: center;
+}
+.rotate-tip .phone-icon {
+  width: 80px;
+  height: 140px;
+  border: 4px solid #FFE500;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  position: relative;
+  animation: rotatePhone 2s ease-in-out infinite;
+}
+.rotate-tip .phone-icon::before {
+  content: '';
+  position: absolute;
+  top: 10px; left: 50%;
+  transform: translateX(-50%);
+  width: 30px; height: 4px;
+  background: #FFE500;
+  border-radius: 2px;
+}
+@keyframes rotatePhone {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(90deg); }
+}
+.rotate-tip h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.rotate-tip p {
+  font-size: 14px;
+  color: rgba(255,229,0,0.7);
+  letter-spacing: 1px;
+}
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-  body {
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
+  .rotate-tip {
+    display: flex;
   }
 }
 :root {
@@ -690,6 +724,12 @@ body::after {
 </style>
 </head>
 <body>
+<!-- 手机竖屏提示横屏 -->
+<div class="rotate-tip">
+  <div class="phone-icon"></div>
+  <h2>请横屏观看</h2>
+  <p>ROTATE YOUR DEVICE</p>
+</div>
 
 <!-- ===== COVER ===== -->
 <section id="cover">

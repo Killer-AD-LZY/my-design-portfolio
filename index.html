@@ -720,8 +720,40 @@ body::after {
   opacity: 0; transform: translateY(40px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+/* 页面固定比例缩放 */
+#page-wrapper {
+  width: 1920px;
+  transform-origin: top left;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 </style>
+<script>
+// 页面固定宽度1920px，按比例缩放，保持滚动
+function scalePage() {
+  const designWidth = 1920;
+  const scale = window.innerWidth / designWidth;
+  
+  const wrapper = document.getElementById('page-wrapper');
+  if (wrapper) {
+    wrapper.style.transform = 'scale(' + scale + ')';
+    wrapper.style.transformOrigin = 'top left';
+    wrapper.style.position = 'absolute';
+    wrapper.style.top = '0';
+    wrapper.style.left = '0';
+    wrapper.style.width = designWidth + 'px';
+    // 延迟获取实际高度，确保内容已渲染
+    setTimeout(function() {
+      const contentHeight = wrapper.scrollHeight;
+      document.body.style.height = (contentHeight * scale) + 'px';
+      document.body.style.overflowX = 'hidden';
+    }, 100);
+  }
+}
+window.addEventListener('load', scalePage);
+window.addEventListener('resize', scalePage);
+</script>
 </head>
 <body>
 <!-- 手机竖屏提示横屏 -->
@@ -731,6 +763,7 @@ body::after {
   <p>ROTATE YOUR DEVICE</p>
 </div>
 
+<div id="page-wrapper">
 <!-- ===== COVER ===== -->
 <section id="cover">
   <div class="cover-giant-outline">PORTFOLIO</div>
@@ -3648,7 +3681,7 @@ function toggleUISub() {
 }
 </script>
 
-</body>
+</div>`r`n</div>`r`n</body>
 </html>
 
 
